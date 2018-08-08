@@ -1,0 +1,16 @@
+version: '3'
+services:
+  nginx:
+    container_name: nginxasp
+    image: nginx:latest
+    volumes:
+    - ./nginx.conf:./nginx.conf
+    ports:
+      - "80:80"
+    links:
+      - "web"
+  web:
+    container_name: aspnginx
+    image: aspnginx:latest
+ 
+    
