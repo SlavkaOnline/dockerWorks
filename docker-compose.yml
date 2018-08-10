@@ -1,16 +1,19 @@
-version: '3'
+version: '3.7'
 services:
   nginx:
+    build: 
+      context: .
+      dockerfile: ./nginx/Dockerfile
     container_name: nginxasp
-    image: nginx:latest
-    volumes:
-    - ./nginx.conf:./nginx.conf
     ports:
       - "80:80"
     links:
       - "web"
   web:
+    build: 
+      context: .
+      dockerfile: Dockerfile
     container_name: aspnginx
-    image: aspnginx:latest
+    
  
     
