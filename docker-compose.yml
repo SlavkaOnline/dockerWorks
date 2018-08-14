@@ -2,8 +2,8 @@ version: '3.7'
 services:
   nginx:
     build: 
-      context: .
-      dockerfile: ./nginx/Dockerfile
+      context: ./nginx
+      dockerfile: Dockerfile
     container_name: nginxasp
     ports:
       - "80:80"
@@ -13,7 +13,6 @@ services:
     build: 
       context: .
       dockerfile: Dockerfile
-    container_name: aspnginx
-    
- 
+    container_name: aspnginx    
+
     

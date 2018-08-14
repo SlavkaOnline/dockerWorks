@@ -1,0 +1,24 @@
+Attaching to nginxasp, aspnginx
+[33maspnginx |[0m 2018-08-14T08:38:59.738760714Z [40m[1m[33mwarn[39m[22m[49m: Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager[35]
+[33maspnginx |[0m 2018-08-14T08:38:59.738798482Z       No XML encryptor configured. Key {1a53b4d6-9253-4d1e-b662-6fbb28649bdd} may be persisted to storage in unencrypted form.
+[33maspnginx |[0m 2018-08-14T08:38:59.903551048Z Hosting environment: Production
+[33maspnginx |[0m 2018-08-14T08:38:59.908635647Z Content root path: /app
+[33maspnginx |[0m 2018-08-14T08:38:59.908818273Z Now listening on: http://[::]:5090
+[33maspnginx |[0m 2018-08-14T08:38:59.908851344Z Application started. Press Ctrl+C to shut down.
+[33maspnginx |[0m 2018-08-14T08:39:50.902162856Z [40m[1m[33mwarn[39m[22m[49m: Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware[3]
+[33maspnginx |[0m 2018-08-14T08:39:50.904500956Z       Failed to determine the https port for redirect.
+[36mnginxasp |[0m 2018-08-14T08:40:05.509616300Z 2018/08/14 08:40:05 [error] 6#6: *1 open() "/usr/share/nginx/html/api/values" failed (2: No such file or directory), client: 172.21.0.1, server: localhost, request: "GET /api/values HTTP/1.1", host: "localhost"
+[36mnginxasp |[0m 2018-08-14T08:40:05.510908797Z 172.21.0.1 - - [14/Aug/2018:08:40:05 +0000] "GET /api/values HTTP/1.1" 404 169 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:61.0) Gecko/20100101 Firefox/61.0" "-"
+Attaching to nginxasp, aspnginx
+[33maspnginx |[0m [40m[1m[33mwarn[39m[22m[49m: Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager[35]
+[33maspnginx |[0m       No XML encryptor configured. Key {b260664e-1dfc-469c-94c2-9f2c2e69d302} may be persisted to storage in unencrypted form.
+[33maspnginx |[0m Hosting environment: Production
+[33maspnginx |[0m Content root path: /app
+[33maspnginx |[0m Now listening on: http://[::]:5090
+[33maspnginx |[0m Application started. Press Ctrl+C to shut down.
+[36mnginxasp |[0m 2018/08/14 08:44:27 [error] 6#6: *1 open() "/usr/share/nginx/html/api/values" failed (2: No such file or directory), client: 172.22.0.1, server: localhost, request: "GET /api/values HTTP/1.1", host: "localhost"
+[36mnginxasp |[0m 172.22.0.1 - - [14/Aug/2018:08:44:27 +0000] "GET /api/values HTTP/1.1" 404 169 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:61.0) Gecko/20100101 Firefox/61.0" "-"
+[36mnginxasp |[0m 2018/08/14 08:44:27 [error] 6#6: *1 open() "/usr/share/nginx/html/api/values" failed (2: No such file or directory), client: 172.22.0.1, server: localhost, request: "GET /api/values HTTP/1.1", host: "localhost"
+[36mnginxasp |[0m 172.22.0.1 - - [14/Aug/2018:08:44:27 +0000] "GET /api/values HTTP/1.1" 404 169 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:61.0) Gecko/20100101 Firefox/61.0" "-"
+[33maspnginx |[0m [40m[1m[33mwarn[39m[22m[49m: Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware[3]
+[33maspnginx |[0m       Failed to determine the https port for redirect.

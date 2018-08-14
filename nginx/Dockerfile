@@ -1,2 +1,2 @@
 FROM nginx:latest
-COPY ./nginx/nginx.conf /etc/nginx/sites-available/nginx.conf
+COPY nginx.conf /etc/nginx/nginx.conf
